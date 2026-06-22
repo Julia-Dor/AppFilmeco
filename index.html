@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmeco</title>
+
+    <link rel="icon" href="./img/pipoca.png" type="image/png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <main class="container">
+        <section class="card">
+            <header class="cabecalho">
+                <h1>Bem-vindo ao Filmeco</h1>
+                <p>Descubra qual filme combina com o seu momento.</p>
+            </header>
+
+            <form id="form-filme">
+
+                <div class="campo">
+                    <label for="genero">
+                        Escolha o gênero do filme:
+                    </label>
+
+                    <select id="genero" required>
+                        <option value="">Selecione...</option>
+                        <option value="terror">Terror</option>
+                        <option value="acao">Ação</option>
+                        <option value="romance">Romance</option>
+                        <option value="ficcao">Ficção Científica</option>
+                        <option value="animacao">Animação</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="humor">
+                        Como você está se sentindo hoje?
+                    </label>
+
+                    <select id="humor" required>
+                        <option value="">Selecione...</option>
+                        <option value="feliz">Feliz</option>
+                        <option value="triste">Triste</option>
+                        <option value="animado">Animado</option>
+                        <option value="entediado">Entediado</option>
+                        <option value="reflexivo">Reflexivo</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    Recomendar Filme
+                </button>
+
+            </form>
+
+            <section id="resultado" class="resultado">
+
+                <h2>Filme recomendado</h2>
+
+                <div class="filme-card">
+
+                    <img
+                        id="poster-filme"
+                        src="./img/poster-padrao.jpg"
+                        alt="Poster do filme">
+
+                    <div class="filme-info">
+                    <h3 id="nome-filme">
+                        Seu filme aparecerá aqui
+                    </h3>
+
+                    <p id="descricao-filme">
+                        Escolha suas preferências e clique em recomendar.
+                    </p>
+                    </div>
+                </div>
+            </section>    
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

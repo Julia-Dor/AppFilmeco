@@ -1,0 +1,210 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Página */
+
+body {
+    background:
+        
+        url("./img/fundoestrelado.jpeg");
+
+        background-size: cover;
+        background-position: center;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Segoe UI", sans-serif;
+
+    background-color: #111111;
+    color: #f5f5f5;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 24px;
+}
+
+/* Card principal */
+
+.card {
+    background-color: #1a1a1a;
+
+    padding: 40px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.cabecalho h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cabecalho p {
+    margin-top: 10px;
+
+    color: #a1a1aa;
+
+    font-size: 0.95rem;
+}
+
+.cabecalho::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 2px;
+
+    margin: 18px auto 0;
+
+    background-color: #d4a017;
+}
+
+/* Campos */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+label {
+    margin-bottom: 8px;
+
+    font-size: 0.9rem;
+    color: #d4d4d8;
+}
+
+select {
+    padding: 14px;
+
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+
+    background-color: #222222;
+
+    color: #f5f5f5;
+
+    font-size: 1rem;
+}
+
+select:focus {
+    outline: none;
+    border-color: #d4a017;
+}
+
+/* Botão */
+
+button {
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #d4a017;
+
+    color: #111111;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Resultado */
+
+.resultado {
+    margin-top: 32px;
+}
+
+.filme-card {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background-color: #222222;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.filme-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+}
+
+.filme-card p {
+    color: #bdbdbd;
+
+    line-height: 1.6;
+}
+
+h2{
+        margin-bottom: 20px;
+    }
+
+.filme-card {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+
+    padding: 20px;
+}
+
+#poster-filme {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    display: none;
+}
+
+.info-filme {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#nome-filme {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#descricao-filme {
+    color: #cfcfcf;
+    line-height: 1.8;
+    max-width: 300px;
+}
